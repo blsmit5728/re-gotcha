@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE eagle SYSTEM "eagle.dtd">
+<eagle>
+    <drawing>
+        <grid unitdist="mm" unit="mm"/>
+        <layers>
+            <layer name="Top" color="4" number="1" visible="yes" active="yes" fill="1"/>
+            <layer name="Bottom" color="4" number="16" visible="yes" active="yes" fill="1"/>
+            <layer name="tPlace" color="7" number="21" visible="yes" active="yes" fill="1"/>
+            <layer name="bPlace" color="7" number="22" visible="yes" active="yes" fill="1"/>
+            <layer name="tNames" color="7" number="25" visible="yes" active="yes" fill="1"/>
+            <layer name="bNames" color="7" number="26" visible="yes" active="yes" fill="1"/>
+            <layer name="tValues" color="7" number="27" visible="yes" active="yes" fill="1"/>
+            <layer name="bValues" color="7" number="28" visible="yes" active="yes" fill="1"/>
+            <layer name="tStop" color="7" number="29" visible="yes" active="yes" fill="1"/>
+            <layer name="bStop" color="7" number="30" visible="yes" active="yes" fill="1"/>
+            <layer name="tCream" color="7" number="31" visible="yes" active="yes" fill="1"/>
+            <layer name="bCream" color="7" number="32" visible="yes" active="yes" fill="1"/>
+            <layer name="tKeepout" color="4" number="39" visible="yes" active="yes" fill="1"/>
+            <layer name="bKeepout" color="4" number="40" visible="yes" active="yes" fill="1"/>
+            <layer name="tRestrict" color="0" number="41" visible="yes" active="yes" fill="1"/>
+            <layer name="bRestrict" color="0" number="42" visible="yes" active="yes" fill="1"/>
+            <layer name="tDocu" color="7" number="51" visible="yes" active="yes" fill="1"/>
+            <layer name="bDocu" color="7" number="52" visible="yes" active="yes" fill="1"/>
+            <layer name="Nets" color="2" number="91" visible="yes" active="yes" fill="1"/>
+            <layer name="Busses" color="1" number="92" visible="yes" active="yes" fill="1"/>
+            <layer name="Pins" color="2" number="93" visible="yes" active="yes" fill="1"/>
+            <layer name="Symbols" color="4" number="94" visible="yes" active="yes" fill="1"/>
+            <layer name="Names" color="7" number="95" visible="yes" active="yes" fill="1"/>
+            <layer name="Values" color="7" number="96" visible="yes" active="yes" fill="1"/>
+            <layer name="Info" color="7" number="97" visible="yes" active="yes" fill="1"/>
+            <layer name="Guide" color="6" number="98" visible="yes" active="yes" fill="1"/>
+        </layers>
+        <library name="Upverter Library">
+            <description>Upverter Parts Library
+
+Created by Upverter.com</description>
+            <packages>
+                <package name="LINEAR_TECHNOLOGY_LTC1517CS5-3.3#TRPBF_0">
+                    <description>LT-LTC1517-XX-S5-5</description>
+                    <wire layer="21" y2="1.5" width="0.15" x2="0.35" y1="1.5" x1="-0.35"/>
+                    <wire layer="21" y2="-1.5" width="0.15" x2="0.35" y1="-1.5" x1="-0.35"/>
+                    <wire layer="21" y2="1.5" width="0.15" x2="-0.35" y1="-1.5" x1="-0.35"/>
+                    <wire layer="21" y2="1.5" width="0.15" x2="0.35" y1="-1.5" x1="0.35"/>
+                    <wire layer="51" y2="1.5" width="0.1" x2="-0.875" y1="-1.5" x1="-0.875"/>
+                    <wire layer="51" y2="1.5" width="0.1" x2="0.875" y1="-1.5" x1="0.875"/>
+                    <wire layer="51" y2="1.5" width="0.1" x2="0.875" y1="1.5" x1="-0.875"/>
+                    <wire layer="51" y2="-1.5" width="0.1" x2="0.875" y1="-1.5" x1="-0.875"/>
+                    <wire layer="39" y2="1.6" width="0.1" x2="-1.75" y1="-1.6" x1="-1.75"/>
+                    <wire layer="39" y2="1.6" width="0.1" x2="1.75" y1="1.6" x1="-1.75"/>
+                    <wire layer="39" y2="-1.6" width="0.1" x2="1.75" y1="1.6" x1="1.75"/>
+                    <wire layer="39" y2="-1.6" width="0.1" x2="-1.75" y1="-1.6" x1="1.75"/>
+                    <text layer="25" align="bottom-left" y="1.925" x="-2.75" rot="R0" size="1.0">&gt;NAME</text>
+                    <circle y="1.8" x="-1.2" layer="21" radius="0.125" width="0.25"/>
+                    <smd layer="1" thermals="yes" name="1" stop="yes" roundness="0" dx="0.6" dy="0.9" y="0.95" x="-1.2" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="2" stop="yes" roundness="0" dx="0.6" dy="0.9" y="0.0" x="-1.2" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="3" stop="yes" roundness="0" dx="0.6" dy="0.9" y="-0.95" x="-1.2" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="4" stop="yes" roundness="0" dx="0.6" dy="0.9" y="-0.95" x="1.2" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="5" stop="yes" roundness="0" dx="0.6" dy="0.9" y="0.95" x="1.2" rot="R90" cream="yes"/>
+                </package>
+                <package name="LINEAR_TECHNOLOGY_LTC1517CS5-3.3#TRPBF_1">
+                    <description>LT-LTC1517-XX-S5-5</description>
+                    <wire layer="21" y2="1.5" width="0.15" x2="0.25" y1="1.5" x1="-0.25"/>
+                    <wire layer="21" y2="-1.5" width="0.15" x2="0.25" y1="-1.5" x1="-0.25"/>
+                    <wire layer="21" y2="1.5" width="0.15" x2="-0.25" y1="-1.5" x1="-0.25"/>
+                    <wire layer="21" y2="1.5" width="0.15" x2="0.25" y1="-1.5" x1="0.25"/>
+                    <wire layer="51" y2="1.5" width="0.1" x2="-0.875" y1="-1.5" x1="-0.875"/>
+                    <wire layer="51" y2="1.5" width="0.1" x2="0.875" y1="-1.5" x1="0.875"/>
+                    <wire layer="51" y2="1.5" width="0.1" x2="0.875" y1="1.5" x1="-0.875"/>
+                    <wire layer="51" y2="-1.5" width="0.1" x2="0.875" y1="-1.5" x1="-0.875"/>
+                    <wire layer="39" y2="1.75" width="0.1" x2="-2.0" y1="-1.75" x1="-2.0"/>
+                    <wire layer="39" y2="1.75" width="0.1" x2="2.0" y1="1.75" x1="-2.0"/>
+                    <wire layer="39" y2="-1.75" width="0.1" x2="2.0" y1="1.75" x1="2.0"/>
+                    <wire layer="39" y2="-1.75" width="0.1" x2="-2.0" y1="-1.75" x1="2.0"/>
+                    <text layer="25" align="bottom-left" y="1.925" x="-3.0" rot="R0" size="1.0">&gt;NAME</text>
+                    <circle y="1.8" x="-1.2" layer="21" radius="0.125" width="0.25"/>
+                    <smd layer="1" thermals="yes" name="1" stop="yes" roundness="0" dx="0.6" dy="1.1" y="0.95" x="-1.2" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="2" stop="yes" roundness="0" dx="0.6" dy="1.1" y="0.0" x="-1.2" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="3" stop="yes" roundness="0" dx="0.6" dy="1.1" y="-0.95" x="-1.2" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="4" stop="yes" roundness="0" dx="0.6" dy="1.1" y="-0.95" x="1.2" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="5" stop="yes" roundness="0" dx="0.6" dy="1.1" y="0.95" x="1.2" rot="R90" cream="yes"/>
+                </package>
+                <package name="LINEAR_TECHNOLOGY_LTC1517CS5-3.3#TRPBF_2">
+                    <description>LT-LTC1517-XX-S5-5</description>
+                    <wire layer="51" y2="-1.5" width="0.1" x2="0.875" y1="-1.5" x1="-0.875"/>
+                    <wire layer="51" y2="1.5" width="0.1" x2="0.875" y1="1.5" x1="-0.875"/>
+                    <wire layer="51" y2="1.5" width="0.1" x2="0.875" y1="-1.5" x1="0.875"/>
+                    <wire layer="51" y2="1.5" width="0.1" x2="-0.875" y1="-1.5" x1="-0.875"/>
+                    <wire layer="21" y2="1.5" width="0.15" x2="0.15" y1="-1.5" x1="0.15"/>
+                    <wire layer="21" y2="-1.5" width="0.15" x2="0.15" y1="-1.5" x1="-0.15"/>
+                    <wire layer="21" y2="1.5" width="0.15" x2="0.15" y1="1.5" x1="-0.15"/>
+                    <wire layer="21" y2="1.5" width="0.15" x2="-0.15" y1="-1.5" x1="-0.15"/>
+                    <wire layer="39" y2="2.0" width="0.1" x2="-2.35" y1="-2.0" x1="-2.35"/>
+                    <wire layer="39" y2="2.0" width="0.1" x2="2.35" y1="2.0" x1="-2.35"/>
+                    <wire layer="39" y2="-2.0" width="0.1" x2="2.35" y1="2.0" x1="2.35"/>
+                    <wire layer="39" y2="-2.0" width="0.1" x2="-2.35" y1="-2.0" x1="2.35"/>
+                    <text layer="25" align="bottom-left" y="2.0" x="-3.35" rot="R0" size="1.0">&gt;NAME</text>
+                    <circle y="1.85" x="-1.2" layer="21" radius="0.125" width="0.25"/>
+                    <smd layer="1" thermals="yes" name="5" stop="yes" roundness="0" dx="0.7" dy="1.3" y="0.95" x="1.2" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="4" stop="yes" roundness="0" dx="0.7" dy="1.3" y="-0.95" x="1.2" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="3" stop="yes" roundness="0" dx="0.7" dy="1.3" y="-0.95" x="-1.2" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="2" stop="yes" roundness="0" dx="0.7" dy="1.3" y="-0.0" x="-1.2" rot="R90" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="1" stop="yes" roundness="0" dx="0.7" dy="1.3" y="0.95" x="-1.2" rot="R90" cream="yes"/>
+                </package>
+            </packages>
+            <symbols>
+                <symbol name="LINEAR_TECHNOLOGY_LTC1517CS5-3.3#TRPBF_0_0">
+                    <description>LT-LTC1517-XX-S5-5</description>
+                    <wire layer="94" y2="-5.08" width="0.508" x2="0.0" y1="-20.32" x1="0.0"/>
+                    <wire layer="94" y2="-5.08" width="0.508" x2="15.24" y1="-5.08" x1="0.0"/>
+                    <wire layer="94" y2="-20.32" width="0.508" x2="15.24" y1="-5.08" x1="15.24"/>
+                    <wire layer="94" y2="-20.32" width="0.508" x2="0.0" y1="-20.32" x1="15.24"/>
+                    <wire layer="94" y2="-7.62" width="0.15" x2="0.0" y1="-7.62" x1="0.0"/>
+                    <wire layer="94" y2="-20.32" width="0.15" x2="7.62" y1="-20.32" x1="7.62"/>
+                    <wire layer="94" y2="-7.62" width="0.15" x2="15.24" y1="-7.62" x1="15.24"/>
+                    <wire layer="94" y2="-12.7" width="0.15" x2="15.24" y1="-12.7" x1="15.24"/>
+                    <wire layer="94" y2="-15.24" width="0.15" x2="15.24" y1="-15.24" x1="15.24"/>
+                    <text layer="94" align="bottom-left" y="-19.812" x="5.08" rot="R0" size="2.54">GND</text>
+                    <text layer="95" align="top-left" y="-2.54" x="0.0" rot="R0" size="2.54">&gt;NAME</text>
+                    <text layer="95" align="top-left" y="-25.4" x="0.0" rot="R0" size="2.54">LTC1517CS5-3.3#TRPBF</text>
+                    <pin direction="pwr" name="VIN" visible="both" length="middle" y="-7.62" x="-5.08"/>
+                    <pin direction="pwr" name="GND" visible="pad" length="middle" y="-25.4" x="7.62" rot="R90"/>
+                    <pin direction="pwr" name="VOUT" visible="both" length="middle" y="-7.62" x="20.32" rot="R180"/>
+                    <pin direction="pas" name="C1+" visible="both" length="middle" y="-12.7" x="20.32" rot="R180"/>
+                    <pin direction="pas" name="C1-" visible="both" length="middle" y="-15.24" x="20.32" rot="R180"/>
+                </symbol>
+            </symbols>
+            <devicesets>
+                <deviceset prefix="U" name="LINEAR_TECHNOLOGY_LTC1517CS5-3.3#TRPBF">
+                    <description>LT-LTC1517-XX-S5-5</description>
+                    <gates>
+                        <gate name="G$0" symbol="LINEAR_TECHNOLOGY_LTC1517CS5-3.3#TRPBF_0_0" x="0"/>
+                    </gates>
+                    <devices>
+                        <device name="LINEAR_TECHNOLOGY_LTC1517CS5-3.3#TRPBF_0_0" package="LINEAR_TECHNOLOGY_LTC1517CS5-3.3#TRPBF_0">
+                            <connects>
+                                <connect gate="G$0" pad="1" pin="VIN"/>
+                                <connect gate="G$0" pad="2" pin="GND"/>
+                                <connect gate="G$0" pad="3" pin="VOUT"/>
+                                <connect gate="G$0" pad="4" pin="C1+"/>
+                                <connect gate="G$0" pad="5" pin="C1-"/>
+                            </connects>
+                            <technologies>
+                                <technology>
+                                    <attribute name="Vin_MaxV" value="4.4"/>
+                                    <attribute name="Vin_MinV" value="2"/>
+                                    <attribute name="Package_Version" value="Aug-07"/>
+                                    <attribute name="Component_Link_1_Description" value="Manufacturer URL"/>
+                                    <attribute name="vault_guid" value="35A07408-7C75-4009-BA10-CE3315D25989"/>
+                                    <attribute name="Voutput" value="3.3V"/>
+                                    <attribute name="Mounting_Technology" value="Surface Mount"/>
+                                    <attribute name="Frequencyk_Hz" value="700"/>
+                                    <attribute name="MPN" value="LTC1517CS5-3.3#TRPBF"/>
+                                    <attribute name="Component_Link_1_URL" value="http://www.linear.com/"/>
+                                    <attribute name="imported" value="yes"/>
+                                    <attribute name="prefix" value="U"/>
+                                    <attribute name="import_ts" value="1521848924"/>
+                                    <attribute name="Packing" value="Tape and Reel"/>
+                                    <attribute name="Ishutdownu_A" value="1"/>
+                                    <attribute name="release_date" value="1377785337"/>
+                                    <attribute name="datasheet" value="http://cds.linear.com/docs/en/datasheet/15173fs.pdf"/>
+                                    <attribute name="vault_revision" value="F491A441-B7F0-4F36-902B-5EA92C58E7C3"/>
+                                    <attribute name="footprint_variant_name_0" value="Level C"/>
+                                    <attribute name="Package_Description" value="5-Pin Plastic SOT-23, Body 1.625 x 2.90 mm, Pitch 0.95 mm"/>
+                                    <attribute name="footprint_variant_name_2" value="Level A"/>
+                                    <attribute name="Max_IoutmA" value="15"/>
+                                    <attribute name="imported_from" value="vault"/>
+                                    <attribute name="rohs" value="Yes"/>
+                                    <attribute name="Component_Link_3_Description" value="Package Specification"/>
+                                    <attribute name="Isupplym_A" value="0.006"/>
+                                    <attribute name="footprint_variant_name_1" value="Level B"/>
+                                    <attribute name="MF" value="Linear Technology"/>
+                                    <attribute name="package" value="S5-5"/>
+                                    <attribute name="Component_Link_3_URL" value="http://cds.linear.com/docs/en/datasheet/17278fb.pdf"/>
+                                    <attribute name="ciiva_ids" value="1485929"/>
+                                </technology>
+                            </technologies>
+                        </device>
+                        <device name="LINEAR_TECHNOLOGY_LTC1517CS5-3.3#TRPBF_0_1" package="LINEAR_TECHNOLOGY_LTC1517CS5-3.3#TRPBF_1">
+                            <connects>
+                                <connect gate="G$0" pad="1" pin="VIN"/>
+                                <connect gate="G$0" pad="2" pin="GND"/>
+                                <connect gate="G$0" pad="3" pin="VOUT"/>
+                                <connect gate="G$0" pad="4" pin="C1+"/>
+                                <connect gate="G$0" pad="5" pin="C1-"/>
+                            </connects>
+                            <technologies>
+                                <technology>
+                                    <attribute name="Vin_MaxV" value="4.4"/>
+                                    <attribute name="Vin_MinV" value="2"/>
+                                    <attribute name="Package_Version" value="Aug-07"/>
+                                    <attribute name="Component_Link_1_Description" value="Manufacturer URL"/>
+                                    <attribute name="vault_guid" value="35A07408-7C75-4009-BA10-CE3315D25989"/>
+                                    <attribute name="Voutput" value="3.3V"/>
+                                    <attribute name="Mounting_Technology" value="Surface Mount"/>
+                                    <attribute name="Frequencyk_Hz" value="700"/>
+                                    <attribute name="MPN" value="LTC1517CS5-3.3#TRPBF"/>
+                                    <attribute name="Component_Link_1_URL" value="http://www.linear.com/"/>
+                                    <attribute name="imported" value="yes"/>
+                                    <attribute name="prefix" value="U"/>
+                                    <attribute name="import_ts" value="1521848924"/>
+                                    <attribute name="Packing" value="Tape and Reel"/>
+                                    <attribute name="Ishutdownu_A" value="1"/>
+                                    <attribute name="release_date" value="1377785337"/>
+                                    <attribute name="datasheet" value="http://cds.linear.com/docs/en/datasheet/15173fs.pdf"/>
+                                    <attribute name="vault_revision" value="F491A441-B7F0-4F36-902B-5EA92C58E7C3"/>
+                                    <attribute name="footprint_variant_name_0" value="Level C"/>
+                                    <attribute name="Package_Description" value="5-Pin Plastic SOT-23, Body 1.625 x 2.90 mm, Pitch 0.95 mm"/>
+                                    <attribute name="footprint_variant_name_2" value="Level A"/>
+                                    <attribute name="Max_IoutmA" value="15"/>
+                                    <attribute name="imported_from" value="vault"/>
+                                    <attribute name="rohs" value="Yes"/>
+                                    <attribute name="Component_Link_3_Description" value="Package Specification"/>
+                                    <attribute name="Isupplym_A" value="0.006"/>
+                                    <attribute name="footprint_variant_name_1" value="Level B"/>
+                                    <attribute name="MF" value="Linear Technology"/>
+                                    <attribute name="package" value="S5-5"/>
+                                    <attribute name="Component_Link_3_URL" value="http://cds.linear.com/docs/en/datasheet/17278fb.pdf"/>
+                                    <attribute name="ciiva_ids" value="1485929"/>
+                                </technology>
+                            </technologies>
+                        </device>
+                        <device name="LINEAR_TECHNOLOGY_LTC1517CS5-3.3#TRPBF_0_2" package="LINEAR_TECHNOLOGY_LTC1517CS5-3.3#TRPBF_2">
+                            <connects>
+                                <connect gate="G$0" pad="1" pin="VIN"/>
+                                <connect gate="G$0" pad="2" pin="GND"/>
+                                <connect gate="G$0" pad="3" pin="VOUT"/>
+                                <connect gate="G$0" pad="4" pin="C1+"/>
+                                <connect gate="G$0" pad="5" pin="C1-"/>
+                            </connects>
+                            <technologies>
+                                <technology>
+                                    <attribute name="Vin_MaxV" value="4.4"/>
+                                    <attribute name="Vin_MinV" value="2"/>
+                                    <attribute name="Package_Version" value="Aug-07"/>
+                                    <attribute name="Component_Link_1_Description" value="Manufacturer URL"/>
+                                    <attribute name="vault_guid" value="35A07408-7C75-4009-BA10-CE3315D25989"/>
+                                    <attribute name="Voutput" value="3.3V"/>
+                                    <attribute name="Mounting_Technology" value="Surface Mount"/>
+                                    <attribute name="Frequencyk_Hz" value="700"/>
+                                    <attribute name="MPN" value="LTC1517CS5-3.3#TRPBF"/>
+                                    <attribute name="Component_Link_1_URL" value="http://www.linear.com/"/>
+                                    <attribute name="imported" value="yes"/>
+                                    <attribute name="prefix" value="U"/>
+                                    <attribute name="import_ts" value="1521848924"/>
+                                    <attribute name="Packing" value="Tape and Reel"/>
+                                    <attribute name="Ishutdownu_A" value="1"/>
+                                    <attribute name="release_date" value="1377785337"/>
+                                    <attribute name="datasheet" value="http://cds.linear.com/docs/en/datasheet/15173fs.pdf"/>
+                                    <attribute name="vault_revision" value="F491A441-B7F0-4F36-902B-5EA92C58E7C3"/>
+                                    <attribute name="footprint_variant_name_0" value="Level C"/>
+                                    <attribute name="Package_Description" value="5-Pin Plastic SOT-23, Body 1.625 x 2.90 mm, Pitch 0.95 mm"/>
+                                    <attribute name="footprint_variant_name_2" value="Level A"/>
+                                    <attribute name="Max_IoutmA" value="15"/>
+                                    <attribute name="imported_from" value="vault"/>
+                                    <attribute name="rohs" value="Yes"/>
+                                    <attribute name="Component_Link_3_Description" value="Package Specification"/>
+                                    <attribute name="Isupplym_A" value="0.006"/>
+                                    <attribute name="footprint_variant_name_1" value="Level B"/>
+                                    <attribute name="MF" value="Linear Technology"/>
+                                    <attribute name="package" value="S5-5"/>
+                                    <attribute name="Component_Link_3_URL" value="http://cds.linear.com/docs/en/datasheet/17278fb.pdf"/>
+                                    <attribute name="ciiva_ids" value="1485929"/>
+                                </technology>
+                            </technologies>
+                        </device>
+                    </devices>
+                </deviceset>
+            </devicesets>
+        </library>
+    </drawing>
+</eagle>
