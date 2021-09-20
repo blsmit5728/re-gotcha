@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.2">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -4155,6 +4155,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <sheets>
 <sheet>
 <plain>
+<text x="55.88" y="114.3" size="1.778" layer="97">RESET is Active HIGH</text>
 </plain>
 <instances>
 <instance part="U1" gate="G$1" x="93.98" y="53.34" smashed="yes">
@@ -4295,6 +4296,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="-50.8" y1="63.5" x2="-38.1" y2="63.5" width="0.1524" layer="91"/>
 <junction x="-38.1" y="63.5"/>
 </segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="VBAT1V"/>
+<wire x1="116.84" y1="83.82" x2="121.92" y2="83.82" width="0.1524" layer="91"/>
+<label x="116.84" y="83.82" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="TOUCH" class="0">
 <segment>
@@ -4313,6 +4319,65 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="7.62" y1="55.88" x2="7.62" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="7.62" y1="58.42" x2="20.32" y2="58.42" width="0.1524" layer="91"/>
 <label x="15.24" y="58.42" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="16MM" class="0">
+<segment>
+<pinref part="Y1" gate="G$1" pin="1"/>
+<wire x1="-17.78" y1="2.54" x2="-30.48" y2="2.54" width="0.1524" layer="91"/>
+<label x="-30.48" y="2.54" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="XTAL16MM"/>
+<wire x1="116.84" y1="73.66" x2="129.54" y2="73.66" width="0.1524" layer="91"/>
+<label x="124.46" y="73.66" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="16MP" class="0">
+<segment>
+<pinref part="Y1" gate="G$1" pin="2"/>
+<wire x1="-12.7" y1="2.54" x2="7.62" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="2.54" x2="7.62" y2="2.54" width="0.1524" layer="91"/>
+<label x="5.08" y="2.54" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="XTAL16MP"/>
+<wire x1="71.12" y1="73.66" x2="60.96" y2="73.66" width="0.1524" layer="91"/>
+<label x="60.96" y="73.66" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="VBAT3V" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="VBAT_RF"/>
+<wire x1="116.84" y1="81.28" x2="127" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="127" y1="81.28" x2="127" y2="86.36" width="0.1524" layer="91"/>
+<pinref part="U1" gate="G$1" pin="VBAT3V"/>
+<wire x1="127" y1="86.36" x2="116.84" y2="86.36" width="0.1524" layer="91"/>
+<label x="121.92" y="86.36" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="VDCDC" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="VDCDC"/>
+<wire x1="116.84" y1="91.44" x2="134.62" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="91.44" x2="134.62" y2="88.9" width="0.1524" layer="91"/>
+<pinref part="U1" gate="G$1" pin="VDCDC_RF"/>
+<wire x1="134.62" y1="88.9" x2="116.84" y2="88.9" width="0.1524" layer="91"/>
+<label x="127" y="91.44" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="RF_INOUT" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="RFIOP"/>
+<wire x1="71.12" y1="63.5" x2="60.96" y2="63.5" width="0.1524" layer="91"/>
+<label x="58.42" y="63.5" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="RF_GND" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="RFIOM"/>
+<wire x1="71.12" y1="66.04" x2="60.96" y2="66.04" width="0.1524" layer="91"/>
+<label x="60.96" y="66.04" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
